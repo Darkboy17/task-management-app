@@ -136,9 +136,10 @@ The test results will be save in a file called "test-report.html" under the test
 | Method | Endpoint    | Description             |
 |--------|-------------|-------------------------|
 | GET    | /tasks      | Fetch all tasks         |
+| GET    | /tasks/:id  | Fetch a task by id      |
 | POST   | /tasks      | Add a new task          |
 | PATCH  | /tasks/:id  | Update an existing task |
-| DELETE | /tasks/:id  | Delete a task           |
+| DELETE | /tasks/:id  | Delete a task by id     |
 
 ---
 
