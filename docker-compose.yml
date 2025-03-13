@@ -1,0 +1,29 @@
+services:
+  # Backend (NestJS)
+  backend:
+    build: ./backend
+    container_name: backend
+    restart: always
+    ports:
+      - "4000:3000"
+    env_file: # Load environment variables from .env
+      - .env
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+
+  # Frontend (Next.js)
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    restart: always
+    depends_on:
+      - backend
+    ports:
+      - "3001:3000"
+    env_file:
+      - .env # Load frontend environment variables
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    command: sh -c "npm run build && npm start"
