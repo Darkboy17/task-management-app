@@ -13,7 +13,7 @@ Follow these steps to run the project **locally** (without Docker) or using **Do
 ### 1️⃣ Prerequisites
 Ensure you have the following installed:
 - **Node.js** (v18+) → [Download Here](https://nodejs.org/)
-- **MongoDB** (if not using Docker) → [Download Here](https://www.mongodb.com/try/download/community)
+- **MongoDB** → [Download Here](https://www.mongodb.com/try/download/community) or setup a MongoDB account for **MongoDB Atlas** (used by default in this project)
 - **Docker** (optional) → [Install Here](https://docs.docker.com/get-docker/)
 
 ---
